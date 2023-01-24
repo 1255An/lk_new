@@ -1,0 +1,156 @@
+html, body {
+    min-height: 100%;
+    background: radial-gradient(ellipse farthest-corner at left top, #3196ae 30%, #1f5967 100%);
+}
+
+body {
+    padding: 40px;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+
+}
+
+ div {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+}
+
+form {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+
+}
+
+ input, select, p {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+}
+
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    font-weight: 400;
+}
+h3 {
+    margin: 12px 0;
+    color: #1f5967;
+}
+.main-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+fieldset {
+    border: none;
+    border-top: 1px solid #1f5967;
+}
+.common_object_info, .personal-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.common_object_info >div, .personal-details >div >div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.common_object_info >div, .personal-details >div, input, label {
+    width: 100%;
+}
+label {
+    padding: 0 5px;
+    text-align: right;
+    vertical-align: middle;
+}
+input {
+    padding: 5px;
+    vertical-align: middle;
+}
+.checkbox {
+    margin-bottom: 10px;
+}
+select, .children, .gender, .bdate-block {
+    width: calc(100% + 26px);
+    padding: 5px 0;
+}
+select {
+    background: transparent;
+}
+.gender input {
+    width: auto;
+}
+.gender label {
+    padding: 0 5px 0 0;
+}
+.bdate-block {
+    display: flex;
+    justify-content: space-between;
+}
+.birthdate select.day {
+    width: 35px;
+}
+.birthdate select.mounth {
+    width: calc(100% - 94px);
+}
+.birthdate input {
+    width: 38px;
+    vertical-align: unset;
+}
+.checkbox input, .children input {
+    width: auto;
+    margin: -2px 10px 0 0;
+}
+.checkbox a {
+    color: #1f5967;
+}
+.checkbox a:hover {
+    color: #1f5967;
+}
+button {
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: none;
+    background: #1f5967;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+button:hover {
+    background: #143f49;
+}
+@media (min-width: 568px) {
+    .common_object_info >div, .personal-details >div {
+        width: 50%;
+    }
+    label {
+        width: 40%;
+    }
+    input {
+        width: 60%;
+    }
+    select, .children, .gender, .bdate-block {
+        width: calc(60% + 16px);
+    }
+}

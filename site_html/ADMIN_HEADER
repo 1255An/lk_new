@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Личный Кабинет</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="site_html/admin.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<div class="logo">
+   <div class="column"><div class="logo_title">КАБИНЕТ СОТРУДНИКА</div></div>
+   <div class="column"><div class="logo_logon">

@@ -1,0 +1,8 @@
+gswin64c.exe -sDEVICE=png16m -dNOPAUSE -dBATCH -sOutputFile=page-%03d.png -r300 -c "showpage showpage" -f 1.pdf
+
+
+
+gswin64c.exe -dGraphicsAlphaBits=4 -dTextAlphaBits=4 -sDEVICE=pnggray -dNOPAUSE -dBATCH -sOutputFile=page-%03d.png -r350x350 -f 1.pdf
+
+
+gswin64c.exe -dGraphicsAlphaBits=4 -dTextAlphaBits=4 -sDEVICE=jpeg -dNOPAUSE -dBATCH -sOutputFile=page-%03d.jpg -r600x600 -f 1.pdf
