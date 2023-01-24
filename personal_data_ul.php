@@ -861,6 +861,7 @@
             document.getElementById('real_address_street').value = '';
             document.getElementById('real_address_building').value = '';
             document.getElementById('real_address_apart').value = '';
+
         }
     }
 
