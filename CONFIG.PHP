@@ -45,7 +45,7 @@ $TABLES = [
                     "account_status_mail"       => "BOOLEAN DEFAULT FALSE",           // подтверждена ли почта (нужно снова подтверждать при смене почты)
                     "account_status_check"      => "BOOLEAN DEFAULT FALSE",           // проверены ли личные данные
                     "account_status_check_who"  => "VARCHAR DEFAULT ''",           // имя админа (не id, так как админ может уволиться и быть удалённым)
-                    "juridical_form"            => "SMALLINT DEFAULT 1",          // юридическая форма: 1 - физическое лицо, 3 - юридическое лицо, 2 - индивидуальный предприниматель
+                    "juridical_form"            => "SMALLINT DEFAULT 1",          // юридическая форма: 1 - физическое лицо, 2 - юридическое лицо, 3 - индивидуальный предприниматель
 
                     "sex"                       => "BOOLEAN DEFAULT FALSE",           // пол (0 - мужчина/фирма, 1 - женщина) если выбрано физлицо или ИП. для юрлица 0
 

@@ -113,6 +113,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $object_building = '';
         }
 
+        if (isset($_POST['watt_after'])) {
+            if (strlen($_POST['watt_after']) > 0) {
+                $wattage_after = test_input($_POST['watt_after']);
+            } else {
+                $wattage_after = 0;
+            }
+        } else {
+            $wattage_after = 0;
+        }
+
+        if (isset($_POST['volt_after'])) {
+            if (strlen($_POST['volt_after']) > 0) {
+                $voltage_after = test_input($_POST['volt_after']);
+            } else {
+                $voltage_after = 0;
+            }
+        } else {
+            $voltage_after = 0;
+        }
+
+
         if (isset($_POST['cad_number'])) {
             if (strlen($_POST['cad_number']) > 0 && $_POST['cad_number'] !== '-') {
                 $cadastral_number = test_input($_POST['cad_number']);
@@ -139,28 +160,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $ownership = '';
         }
 
-        if (isset($_POST['watt_after'])) {
-            if (strlen($_POST['watt_after']) > 0) {
-                $wattage_after = test_input($_POST['watt_after']);
-            } else {
-                $wattage_after = 0;
-            }
-        } else {
-            $wattage_after = 0;
-        }
-
-        if (isset($_POST['volt_after'])) {
-            if (strlen($_POST['volt_after']) > 0) {
-                $voltage_after = test_input($_POST['volt_after']);
-            } else {
-                $voltage_after = 0;
-            }
-        } else {
-            $voltage_after = 0;
-        }
 
         if (isset($_POST['watt_total'])) {
-            if (trim($_POST['watt_total']) == ''|| $_POST['']) {
+            if (trim($_POST['watt_total']) == '') {
                 $wattage_total = $wattage_after;
             } else {
                 $wattage_total = test_input($_POST['watt_total']);

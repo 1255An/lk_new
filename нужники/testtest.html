@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    label {
+        display: block;
+        margin-top: 1em;
+    }
+
+    input:valid {
+        background-color: palegreen;
+    }
+
+    input:invalid {
+        background-color: lightpink;
+    }
+
+</style>
+<form action="#">
+    <input type="text" placeholder="email" pattern="^\s*[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,15}\s*$"/> <br> <br>
+    <input type="text" placeholder="FIO" pattern="^\s*[А-Яа-яЁё\s*\-]{2,25}"> <br> <br>
+    <input type="text" placeholder="date" pattern="^[0-9]{2}\.[0-9]{2}\.[0-9]{2,4}$"> <br> <br>
+    <input type="text" placeholder="phone" pattern="^\s*[+]{0,1}\s*[0-9]\s*?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s*[0-9]{7,13}\s*$"> <br> <br>
+    <input type="text" placeholder="passport_Number" pattern="^\s*\d{4}\s*№?\s*\d{6}\s*$"> <br> <br>
+    <input type="text" placeholder="passport_cod podrazdelenia" pattern="^\s*\d{3}-*\s*\d{3}\s*$"> <br> <br>
+    <input type="text" placeholder="passport_kem vidan" pattern="^\s*[А-Яа-яЁё0-9,\s*\-\.?№]{3,100}$"> <br> <br>
+    <input type="text" placeholder="inn luboe litso" pattern="^\s*[№\s]{0,2}[0-9]{10,12}\s*$"> <br> <br>
+    <input type="text" placeholder="snils" pattern="^\s*[№\s]{0,2}[0-9\s\-]{11,15}\s*$"> <br> <br>
+    <input type="text" placeholder="огрн" pattern="^\s*[№\s]{0,2}[0-9]{13}\s*$"> <br> <br>
+    <input type="text" placeholder="регион, город, улица" pattern="^\s*[а-яА-ЯеЁ0-9,.'\s\-\/]+$"><br><br>
+    <input type="text" placeholder="дом, офис, квартира" pattern="^\s*[а-яА-ЯеЁ0-9a-zA-Z,№_:#.'\s\-\/]+$"><br><br>
+
+
+    <input type="text" placeholder="тип ТОО,наименование ЭУ" pattern="^\s*[а-яА-ЯеЁ,.\s\-\/]+$"><br><br>
+    <input type="text" placeholder="кадастр номер" pattern="^\s*\d{1,2}:\d{1,2}:\d{6,7}:\d{1,5}\s*$"><br><br>
+    <input type="text" placeholder="номер собственности" pattern="^\s*[а-яА-ЯеЁ0-9,№:'.\s\-\/]+$"><br><br>
+    <input type="text" placeholder="макс мощности и напряжения" pattern="^\s*[а-яА-ЯеЁ0-9,.\s\-\/]+$"><br><br>
+    <button type="submit" id="pd-submit" class="pd-submit" name="pd-submit">Отправить заявку</button>
+</form>
+</body>
+</html>
